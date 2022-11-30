@@ -1,0 +1,74 @@
+html, body {
+    background-color: rgb(3, 3, 3);
+    margin: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section {
+    background-color: #323232;
+    border-radius: 10px;
+    width: 100px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    color: white;
+
+
+}
+
+.cover {
+    display: flex;
+
+    justify-content: center;
+}
+
+.cover img {
+    height: 50%;
+    width: 50%;
+    border-radius: 8px;
+
+
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.infoSong {
+    flex-wrap: wrap;
+}
+
+.info div {
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+    width: 300px;
+}
+
+@keyframes barrido {
+
+    from {
+        transform: translateX(50px);
+    }
+
+    to{
+        transform: translateX(-50px);
+    }
+
+
+
+}
