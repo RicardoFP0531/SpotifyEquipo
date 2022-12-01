@@ -10,16 +10,14 @@ html, body {
 }
 
 
-section {
+.container {
     background-color: #323232;
     border-radius: 10px;
-    width: 100px;
-
-
+    height: 220px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: max-content;
     color: white;
 
 
@@ -32,8 +30,8 @@ section {
 }
 
 .cover img {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     border-radius: 8px;
 
 
