@@ -1,72 +1,93 @@
-html, body {
-    background-color: rgb(3, 3, 3);
+body{
     margin: 0;
     height: 100%;
-
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
-
-.container {
-    background-color: #323232;
-    border-radius: 10px;
-    height: 220px;
-    width: 500px;
+section{
+    color: rgb(226, 226, 226);
+    background: linear-gradient(-45deg, #D97F45 -30%, transparent 80%), linear-gradient(45deg, #8C4E26 20%, #1F4E8C, #D9BD1A 60%); 
+    width: 30%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-
-
+    padding: 32px;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.cover {
-    display: flex;
-
-    justify-content: center;
+section .img{
+    width: 100%;
 }
 
-.cover img {
-    height: 70%;
-    width: 70%;
-    border-radius: 8px;
-
-
-
+section .img img{
+    width:100% ;
+    border-radius: 9px;
 }
 
-.info {
+.info{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end; 
+    margin-left: 20px;
+}
+.info .spotify{
+    font-size: 24px;
+}
+
+.music {
+    overflow: hidden;
+}
+
+.info button{
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.info button i{
+    font-size: 18px;
+    transition: all .3s;
+}
+
+
+.info h1{
+    width: 200px;
+    
+    white-space:nowrap;
+    /* overflow:hidden; */
+    
+}
+
+.info p{
+    color: #cccccc;
+    font-size:smaller;
 
 }
 
-.infoSong {
-    flex-wrap: wrap;
-}
 
-.info div {
-    border: 1px solid red;
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: flex-start; */
-    width: 300px;
-}
-
-@keyframes barrido {
-
-    from {
-        transform: translateX(50px);
+@keyframes onplay{
+    0%{
+        transform: translateX(100%);
+    }
+    90%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-100%);
     }
 
-    to{
-        transform: translateX(-50px);
-    }
+}
 
-
-
+.onplay{
+    animation-name: onplay;
+    animation-timing-function: ease-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
 }
